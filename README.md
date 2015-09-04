@@ -31,3 +31,35 @@ Teknik Detay:
 * Dahili NRF24l01
 * Tüm MicroSD kartlar ile uyumlu çalışmaktadır.(Tercihen Class10)
 * Tüm I2C Sensörlerinin bağlantılarına uygun
+
+
+Arduino Pini	Kullanımı
+
+D0	Boş
+D1	Boş
+D2	Boş
+D3	Boş
+D4	Boş
+D5	Programlanabilir
+LED
+D6	CS /SD Kart
+D7	CSN / NRF
+D8	CE / SPI
+D9	Boş
+D10	Boş
+D11	MOSI / SPI
+D12	MISO / SPI
+D13	SCK
+
+A0	Trimpot veya Boş *
+A1	Trimpot veya Boş *
+A2	Boş
+A3	Boş
+A4	SDA
+A5	SCL
+
+	
+	
+	
+	
+	
