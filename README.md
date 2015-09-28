@@ -3,7 +3,7 @@
 Uygulama notlarını ve kodlarını bu sayfada bulacaksınız. 
 
 
-![](https://camo.githubusercontent.com/ba5fcf3d3f206b85e9e18cdf34eedb6bf2711597/68747470733a2f2f74696e796a70672e636f6d2f736974652f6f75747075742f66747365686d756668316d316d626a642e706e672f61726475436f6d2e706e67)
+![ArduCom](http://www.hosttc.com/upload/arducom_pinout.png)
 
 
 Projelerinizde kablosuz haberleşme uygulamaları yapmanız için 2.4GHz’lık haberleşme modülleri ile açık alanda 250 metreye kadar iletişim sağlayabilirsiniz.
