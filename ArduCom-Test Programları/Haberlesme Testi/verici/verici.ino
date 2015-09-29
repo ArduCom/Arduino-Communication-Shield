@@ -1,3 +1,13 @@
+/*
+------------------------------------------------
+Program No: 5.1
+Program Adı: Kablosuz Haberlesme Alıcı Modulu
+Kullanılan Geliştirme Kiti: Arduino Uno
+Kullanılan Eklenti : ArduCom Shield
+Web Adres: www.arduinouygulamalari.com
+Gerekli Kütüphaneler : nRF24L01p.h
+------------------------------------------------
+*/
 #include <SPI.h>
 #include <nRF24L01p.h>
 
@@ -9,22 +19,16 @@ void setup(){
   SPI.begin();
   SPI.setBitOrder(MSBFIRST);
   transmitter.channel(90);
-  transmitter.TXaddress("Mert2");
+  transmitter.TXaddress("ArduCom1"); // haberlesme adresi. Bu adres alıcı ArduCom'da aynı olmalıdır
   transmitter.init();
   
   Serial.print("verici");
 }
-
-byte myData[5]={18,05,19,89,24};                 // 5 Bytes
-char *myCharArray="KirmiziSpor";                   //14 Bytes
-int myInts[3]={311,220,311};                    // 6 Bytes
-unsigned int myUint[5]={101,102,103,104,105};//10 Bytes +
-                                              // = 31 Bytes
-                                  //less than 32 Bytes PayLoad
+ 
                                   
                                   
-int xEkseni=0;
-int yEkseni=0;
+int ilkData=123;
+int ikinciData=555;
 
 String ileti = "Mert!";
 
@@ -32,14 +36,11 @@ unsigned long time;
 
 
 void loop(){
-    time = millis();
-
-
-      transmitter.txPL(time);
-      transmitter.txPL("1000");
-      
-      
-      transmitter.send(SLOW);
+ 
+      transmitter.txPL(ilkData);
+      transmitter.txPL(ikinciData);
+            
+      transmitter.send(SLOW); // haberleşme hızı Slow/Fast
       Serial.println("gonderildi");
       delay(1000);
       
